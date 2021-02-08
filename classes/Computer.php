@@ -13,16 +13,13 @@ class computer
     // owner
     private User $owner;
 
-    public function __construct(string $brd, string $graphCard, string $pross, string $os, string $color)
+    public function __construct(string $brd, string $os)
     {
         $this->setBrand($brd);
         $this->setOs($os);
         // optional default values
         $this->setKeyboard(false);
         $this->setMouse(false);
-        // ID (auto generated)
-        $this->id = time();
-
     }
 
     /**
